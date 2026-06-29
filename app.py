@@ -286,7 +286,7 @@ if 'riwayat' not in st.session_state:
 # ==========================================
 
 with st.sidebar:
-    st.markdown('<div style="text-align: center;"><h1 style="margin-bottom:0px; font-size: 2.2rem;">☕ Siko</h1><p style="color: #8c7362; font-style: italic; font-size: 0.9rem; margin-top:0px;">Sistem Pakar Kopi Pasca Roasting</p></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: center;"><h1 style="margin-bottom:0px; font-size: 2.2rem;">☕ RoastTrack</h1><p style="color: #8c7362; font-style: italic; font-size: 0.9rem; margin-top:0px;">Sistem Pakar Kopi Pasca Roasting</p></div>', unsafe_allow_html=True)
     st.markdown("---")
     
     # Sidebar Navigation Menu
@@ -317,7 +317,7 @@ with st.sidebar:
             
     st.markdown("""
         <div style="font-size: 0.75rem; color: #5c4a3c; margin-top: 5rem; border-top: 1px solid #33271f; padding-top: 1rem;">
-            Siko App v1.0.0<br>
+            RoastTrack App v1.0.0<br>
             Metode: Forward Chaining<br>
             Berdasarkan Jurnal Sistem Informasi, Mei 2024
         </div>
