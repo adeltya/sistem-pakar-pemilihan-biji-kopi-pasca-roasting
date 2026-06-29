@@ -604,7 +604,7 @@ elif menu == "📖 Ensiklopedia Kopi":
     
     with col1:
         st.markdown("""
-        <div class="coffee-card" style="height: 480px;">
+        <div class="coffee-card" style="height:auto;">
             <h3 style="margin-top:0px; color:#ffb77d !important;">👑 Kopi Arabika</h3>
             <p><b>Arabika</b> adalah jenis kopi paling populer di dunia karena profil rasanya yang kompleks dan kaya.</p>
             <ul style="color: #dfd0c6; padding-left: 20px;">
@@ -618,7 +618,7 @@ elif menu == "📖 Ensiklopedia Kopi":
         
     with col2:
         st.markdown("""
-        <div class="coffee-card" style="height: 480px;">
+        <div class="coffee-card" style="height:auto;">
             <h3 style="margin-top:0px; color:#e6a15c !important;">⚡ Kopi Robusta</h3>
             <p><b>Robusta</b> terkenal karena kekuatan rasanya yang tebal (<i>bold body</i>) dan ketahanan penyakit yang baik.</p>
             <ul style="color: #dfd0c6; padding-left: 20px;">
@@ -632,7 +632,7 @@ elif menu == "📖 Ensiklopedia Kopi":
         
     with col3:
         st.markdown("""
-        <div class="coffee-card" style="height: 480px;">
+        <div class="coffee-card" style="height:auto;">
             <h3 style="margin-top:0px; color:#ffab91 !important;">🍃 Kopi Liberika</h3>
             <p><b>Liberika</b> adalah varietas kopi eksotis asal Liberia dengan ukuran biji yang sangat masif.</p>
             <ul style="color: #dfd0c6; padding-left: 20px;">
