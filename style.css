@@ -150,10 +150,18 @@ section[data-testid="stSidebar"] h3 {
 }
 
 /* Hide default streamlit layout elements */
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
+#MainMenu {
+    visibility: hidden;
+}
 
+footer {
+    visibility: hidden;
+}
+
+/* Jangan sembunyikan header */
+header {
+    visibility: visible !important;
+}
 /* Custom Text Input override */
 .stTextInput > div > div {
     background-color: rgba(22, 17, 13, 0.8) !important;
