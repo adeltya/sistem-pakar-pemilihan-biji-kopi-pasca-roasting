@@ -1,0 +1,350 @@
+/* Custom Premium Coffee Espresso Dark Theme for Siko */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Apply custom styles to the main Streamlit container */
+.stApp {
+    background: radial-gradient(circle at 50% 15%, #2a1e16 0%, #0d0a08 100%) !important;
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif !important;
+    color: #f5ebe6 !important;
+}
+
+/* Center and constrain block container for focus */
+.block-container {
+    max-width: 950px !important;
+    padding-top: 3rem !important;
+    padding-bottom: 5rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Custom premium headers */
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.03em !important;
+}
+
+h1 {
+    font-size: 2.8rem !important;
+    background: linear-gradient(135deg, #ffd3b0 0%, #e6a15c 50%, #b86f34 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem !important;
+    text-shadow: 0 4px 20px rgba(230, 161, 92, 0.15);
+}
+
+h2 {
+    font-size: 1.8rem !important;
+    color: #fcd5b5 !important;
+}
+
+h3 {
+    font-size: 1.4rem !important;
+    color: #e6a15c !important;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: #0b0807 !important;
+    border-right: 1px solid rgba(230, 161, 92, 0.1) !important;
+}
+
+section[data-testid="stSidebar"] h1, 
+section[data-testid="stSidebar"] h2, 
+section[data-testid="stSidebar"] h3 {
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: #e6a15c !important;
+}
+
+/* Custom Badge element */
+.header-badge {
+    background: rgba(230, 161, 92, 0.15);
+    color: #ffb77d;
+    border: 1px solid rgba(230, 161, 92, 0.3);
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* Frosted glassmorphism card for main content area */
+.coffee-card, div[data-testid="stForm"] {
+    background: rgba(26, 19, 15, 0.5) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(230, 161, 92, 0.12) !important;
+    border-radius: 24px !important;
+    padding: 3rem !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6) !important;
+    margin-bottom: 2rem !important;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.coffee-card:hover, div[data-testid="stForm"]:hover {
+    border-color: rgba(230, 161, 92, 0.3) !important;
+    box-shadow: 0 25px 60px rgba(230, 161, 92, 0.08) !important;
+    transform: translateY(-2px);
+}
+
+/* Diagnostic Question container card */
+.wizard-box {
+    background: radial-gradient(circle at top left, rgba(46, 33, 25, 0.6) 0%, rgba(20, 14, 11, 0.8) 100%) !important;
+    border: 1px solid rgba(230, 161, 92, 0.2) !important;
+    border-radius: 28px !important;
+    padding: 3.5rem 2.5rem !important;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.7) !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.wizard-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #b86f34 0%, #e6a15c 50%, #b86f34 100%);
+}
+
+/* Step/Result cards styling */
+.result-success {
+    background: linear-gradient(135deg, rgba(34, 76, 52, 0.45) 0%, rgba(13, 38, 24, 0.65) 100%) !important;
+    border: 1px solid rgba(46, 125, 50, 0.4) !important;
+    border-radius: 24px !important;
+    padding: 3rem !important;
+    color: #c8e6c9 !important;
+    box-shadow: 0 20px 45px rgba(27, 94, 32, 0.2) !important;
+    margin-bottom: 2rem !important;
+}
+
+.result-success h2 {
+    color: #81c784 !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    font-size: 2.2rem !important;
+}
+
+.result-warning {
+    background: linear-gradient(135deg, rgba(142, 58, 29, 0.4) 0%, rgba(61, 21, 8, 0.65) 100%) !important;
+    border: 1px solid rgba(216, 67, 21, 0.4) !important;
+    border-radius: 24px !important;
+    padding: 3rem !important;
+    color: #ffccbc !important;
+    box-shadow: 0 20px 45px rgba(216, 67, 21, 0.2) !important;
+    margin-bottom: 2rem !important;
+}
+
+.result-warning h2 {
+    color: #ff8a65 !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    font-size: 2.2rem !important;
+}
+
+/* Hide default streamlit layout elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Custom Text Input override */
+.stTextInput > div > div {
+    background-color: rgba(22, 17, 13, 0.8) !important;
+    border: 1px solid rgba(230, 161, 92, 0.2) !important;
+    border-radius: 12px !important;
+    color: #f5ebe6 !important;
+    height: 48px !important;
+    transition: all 0.3s ease !important;
+}
+
+.stTextInput > div > div:focus-within {
+    border-color: #e6a15c !important;
+    box-shadow: 0 0 10px rgba(230, 161, 92, 0.25) !important;
+}
+
+.stTextInput input {
+    color: #f5ebe6 !important;
+    font-size: 1rem !important;
+}
+
+/* Beautiful custom buttons */
+.stButton > button {
+    height: 52px !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    border-radius: 14px !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    width: 100% !important;
+    letter-spacing: -0.01em !important;
+    border: 1px solid rgba(230, 161, 92, 0.25) !important;
+    background-color: rgba(38, 28, 22, 0.6) !important;
+    color: #ffc494 !important;
+}
+
+.stButton > button:hover {
+    background-color: rgba(230, 161, 92, 0.12) !important;
+    border-color: #e6a15c !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 24px rgba(230, 161, 92, 0.1) !important;
+}
+
+/* Primary override (Usually YA / Start buttons) */
+.stButton > button[kind="primary"], 
+div[data-testid="stFormSubmitButton"] > button {
+    background: linear-gradient(135deg, #e6a15c 0%, #b86f34 100%) !important;
+    border: none !important;
+    color: #120e0b !important;
+    font-weight: 700 !important;
+    box-shadow: 0 8px 25px rgba(230, 161, 92, 0.2) !important;
+}
+
+.stButton > button[kind="primary"]:hover,
+div[data-testid="stFormSubmitButton"] > button:hover {
+    box-shadow: 0 12px 30px rgba(230, 161, 92, 0.35) !important;
+    transform: translateY(-2px) !important;
+    background: linear-gradient(135deg, #ffb36e 0%, #d87d3a 100%) !important;
+}
+
+/* Custom Sleek Progress bar */
+.progress-container {
+    background-color: rgba(230, 161, 92, 0.05);
+    border: 1px solid rgba(230, 161, 92, 0.1);
+    padding: 1.25rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #bfa593;
+    font-weight: 500;
+    margin-bottom: 0.65rem;
+    letter-spacing: 0.02em;
+}
+
+.progress-bar-bg {
+    background-color: rgba(18, 14, 11, 0.8);
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.02);
+}
+
+.progress-bar-fill {
+    background: linear-gradient(90deg, #b86f34 0%, #e6a15c 50%, #ffd3b0 100%);
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(230, 161, 92, 0.5);
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Badge summary pill designs */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background: rgba(18, 14, 11, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.ciri-badge {
+    background: rgba(230, 161, 92, 0.06);
+    border: 1px solid rgba(230, 161, 92, 0.15);
+    color: #e5d2c4;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Custom separator lines */
+hr {
+    border-color: rgba(230, 161, 92, 0.12) !important;
+    margin: 2.5rem 0 !important;
+}
+
+/* Rounded corners and glow for food photography images */
+div[data-testid="stImage"] img {
+    border-radius: 20px !important;
+    border: 1px solid rgba(230, 161, 92, 0.2) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6) !important;
+    margin-bottom: 1.5rem !important;
+}
+
+/* custom checkbox designs (sidebar/tabs) */
+.stCheckbox > label {
+    font-size: 0.95rem !important;
+    color: #ebdcd1 !important;
+}
+div[data-testid="stMarkdownContainer"] p {
+    line-height: 1.7 !important;
+    color: #dfd0c6;
+}
+div[data-testid="stMarkdownContainer"] li {
+    line-height: 1.6 !important;
+    color: #dfd0c6;
+    margin-bottom: 0.4rem;
+}
+.stRadio label div {
+    color: #ebdcd1 !important;
+    font-size: 1.05rem !important;
+}
+
+/* STYLING ULANG RADIO SIDEBAR MENJADI MENU PILIHAN KHAS */
+div[data-testid="stRadio"] div[role="radiogroup"] {
+    gap: 0.6rem !important;
+}
+
+/* Sembunyikan lingkaran/buletan radio button Streamlit */
+div[data-testid="stRadio"] label > div:first-child {
+    display: none !important;
+}
+
+/* Buat setiap opsi label radio menjadi card menu tab */
+div[data-testid="stRadio"] label {
+    background-color: rgba(25, 18, 14, 0.5) !important;
+    border: 1px solid rgba(230, 161, 92, 0.08) !important;
+    padding: 0.9rem 1.2rem !important;
+    border-radius: 14px !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    margin-bottom: 0px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer !important;
+}
+
+/* Efek hover pada opsi menu */
+div[data-testid="stRadio"] label:hover {
+    background-color: rgba(230, 161, 92, 0.1) !important;
+    border-color: rgba(230, 161, 92, 0.25) !important;
+    transform: translateX(4px) !important;
+}
+
+/* Efek aktif (Terpilih) menggunakan selector :has */
+div[data-testid="stRadio"] label:has(input[type="radio"]:checked) {
+    background: linear-gradient(135deg, rgba(230, 161, 92, 0.18) 0%, rgba(184, 111, 52, 0.25) 100%) !important;
+    border: 1.5px solid #e6a15c !important;
+    box-shadow: 0 8px 25px rgba(230, 161, 92, 0.15) !important;
+}
+
+/* Tekankan teks menu yang aktif */
+div[data-testid="stRadio"] label:has(input[type="radio"]:checked) div {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
