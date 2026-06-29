@@ -1,4 +1,4 @@
-# Siko: Sistem Pakar Pemilihan Biji Kopi Pasca Roasting
+# RoastTrack: Sistem Pakar Pemilihan Biji Kopi Pasca Roasting
 
 Aplikasi web Sistem Pakar ini dirancang untuk melakukan klasifikasi kelayakan biji kopi pasca roasting menggunakan metode **Forward Chaining**. Proyek ini dibuat berdasarkan penelitian yang berjudul *"Sistem Pakar Pemilihan Biji Kopi Pasca Roasting untuk Menghasilkan Kopi Berkualitas Menggunakan Metode Forward Chaining"*.
 
